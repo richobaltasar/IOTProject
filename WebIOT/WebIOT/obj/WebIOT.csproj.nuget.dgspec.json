@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\WebIOT.csproj": {}
+    "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\WebIOT.csproj": {
+    "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\WebIOT.csproj",
+        "projectUniqueName": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
         "projectName": "WebIOT",
-        "projectPath": "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\WebIOT.csproj",
+        "projectPath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
         "packagesPath": "C:\\Users\\richo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\obj\\",
+        "outputPath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\richo\\AppData\\Roaming\\NuGet\\NuGet.Config",

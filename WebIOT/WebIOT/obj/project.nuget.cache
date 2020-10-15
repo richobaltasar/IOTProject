@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OYh57idzthJoQ+N7QwGVc0bu310XerZnqB1BVTb0dcqUm1g0Uj9MgwVxe2NFdZaihXUUd0U1zDcugBZBRuSJBA==",
+  "dgSpecHash": "u8T3/aOsbdaocHTh0HwWOIEtrkKEOa5KhzZOI1k8kfWRi6Y22f+jdaKMxaFQHdtyCYSEdUOiuuemDYbg3ytkQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\richo\\source\\repos\\IOTProject2\\WebIOT\\WebIOT\\WebIOT.csproj",
+  "projectFilePath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richo\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.8\\microsoft.aspnetcore.mvc.razor.extensions.3.1.8.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.8\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.8.nupkg.sha512",
