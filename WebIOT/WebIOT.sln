@@ -3,18 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebIOT", "WebIOT\WebIOT.csproj", "{15F7AD57-CED2-4812-B63B-844915FA9884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebIOT", "WebIOT\WebIOT.csproj", "{15F7AD57-CED2-4812-B63B-844915FA9884}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{494F7D8B-CBEB-476E-852A-9644E02BE8DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModbusServerRTU", "ModbusServerRTU\ModbusServerRTU.csproj", "{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyModbusServerSimulator", "EasyModbusServerSimulator\EasyModbusServerSimulator.csproj", "{871BD4C1-69F0-45B9-8807-1620E6A896A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DebugCommercial3|Any CPU = DebugCommercial3|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{15F7AD57-CED2-4812-B63B-844915FA9884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{15F7AD57-CED2-4812-B63B-844915FA9884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F7AD57-CED2-4812-B63B-844915FA9884}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F7AD57-CED2-4812-B63B-844915FA9884}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
 		{15F7AD57-CED2-4812-B63B-844915FA9884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F7AD57-CED2-4812-B63B-844915FA9884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.DebugCommercial3|Any CPU.Deploy.0 = Debug|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924E0F3B-86BF-42D3-9B18-D7393CB3D13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.DebugCommercial3|Any CPU.ActiveCfg = DebugCommercial3|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.DebugCommercial3|Any CPU.Build.0 = DebugCommercial3|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

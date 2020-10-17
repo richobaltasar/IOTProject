@@ -1,0 +1,26 @@
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe.config
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.pdb
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csprojAssemblyReference.cache
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.Info.resources
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.MainForm.resources
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.Properties.Resources.resources
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.PropertyForm.resources
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.GenerateResource.cache
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.CoreCompileInputs.cache
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.exe
+G:\Tools War Project Pak wawan\EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.pdb
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csprojAssemblyReference.cache
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.Info.resources
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.MainForm.resources
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.Properties.Resources.resources
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.PropertyForm.resources
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.GenerateResource.cache
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.CoreCompileInputs.cache
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.exe
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.pdb
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe.config
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.pdb
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbus.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.CopyComplete

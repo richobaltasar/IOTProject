@@ -1,0 +1,10 @@
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\bin\Debug\Database.dacpac
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\bin\Debug\Database.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\bin\Debug\Database.pdb
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\Model.xml
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\refactor.xml
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\postdeploy.sql
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\predeploy.sql
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\Database.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\Database\obj\Debug\Database.pdb
