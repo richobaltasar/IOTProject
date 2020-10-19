@@ -7,5 +7,10 @@ namespace WebIOT.Models
         public string RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public string MessageContent { get; set; }
+        public string MessageTitle { get; set; }
+        public string MessageStatus { get; set; }
+
     }
+    
 }

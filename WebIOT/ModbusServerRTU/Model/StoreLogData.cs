@@ -72,9 +72,9 @@ namespace ModbusServerRTU.Model
                     file.WriteLine(timestamp.ToString("dd.MM.yyyy H:mm:ss.ff ") + message);
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-
+                throw ex;
             }
         }
 

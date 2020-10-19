@@ -22,7 +22,7 @@ namespace ModbusServerRTU
     {
         public delegate void settingsChangedEvent();
         private bool debug = false;
-        ModbusServer ModbusRTU;
+        ModbusServer ModbusRTU =  new ModbusServer();
 
         private UInt16 startingAddressDiscreteInputs = 1;
         private UInt16 startingAddressCoils = 1;

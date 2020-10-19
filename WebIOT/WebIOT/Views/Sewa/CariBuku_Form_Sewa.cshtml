@@ -1,0 +1,131 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "";
+    MasterFunction f = new MasterFunction();
+    var formData = new FormMasterData();
+}
+@model FormPeminjamanBuku
+@{
+    if (Model.Error == null)
+    {
+
+        try
+        {
+    <form asp-action="CariBuku_AddCart"
+          onsubmit="return CariBuku_AddCart(this)"
+          autocomplete="off">
+
+        @{
+            <div class="container">
+                <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card-body slides" style="height:450px;">
+                                    <img src="~/@Model.Img" style="width:100%;border-radius:10px 10px;max-height:300px;" class="shadow" />
+                                    <h4 style="margin-bottom:0px;margin-top:20px;">@Model.JudulBuku</h4>
+                                    <p style="font-style:italic;margin:0px 0px 0px 0px;color:dimgray;font-size:small;">Author by @Model.Pengarang</p>
+                                    <br />
+                                    <strong>Kategory buku @Model.JenisBuku </strong>
+                                    <br />
+                                    <strong>Sewa Rp @Model.HargaSewaPerHari.toNumber()/Hari </strong>
+                                </div>
+                            </div>
+                    <div class="col-sm-6">
+                        @{
+                            formData.Template = f.GetFormLayout("Form FormPeminjamanBuku");
+                            formData.ColField = 1;
+                            if (Model != null)
+                            {
+                                formData.dbContext = Model;
+                            }
+                            @await Html.PartialAsync("_LayoutForm", formData)
+                        }
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-danger" id="error-alert">
+
+                <strong id="title-error"></strong>
+                <br />
+                <div id="message_error" style="overflow-x:auto;"></div>
+            </div>
+            <hr />
+
+            <button type="submit" class="btn btn-outline-info" style="float:right;margin-left:10px;">
+                <span class="fa fa-save"></span> Add List
+            </button>
+        }
+    </form>
+    <script type="text/javascript">
+        var dari = $("#SewaDari");
+        var sampai = $("#Sewasampai");
+        
+
+        $(document).ready(function () {
+            $("#error-alert").hide();
+
+            var dateToday = new Date(); 
+            $('#Sewasampai').datepicker('setStartDate', new Date());
+
+            $("#SewaDari").on('changeDate', function (selected) {
+                var startDate = new Date(selected.date.valueOf());
+                $("#Sewasampai").datepicker('setStartDate', startDate);
+                if ($("#SewaDari").val() > $("#Sewasampai").val()) {
+                    $("#Sewasampai").val($("#SewaDari").val());
+                }
+                SetTotaSewa(dari.val(), sampai.val(),@Model.HargaSewaPerHari.toDecimal())
+            });
+            $("#Sewasampai").on('changeDate', function (selected) {
+                SetTotaSewa(dari.val(), sampai.val(),@Model.HargaSewaPerHari.toDecimal())
+            });
+        });
+        function SetTotaSewa(dari, sampai, harga) {
+            $(".preloader").fadeIn();
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("CariBuku_GetTotalSewa", "Sewa")' + '?Dari=' + dari + '&Sampai=' + sampai + '&Harga=' + harga,
+                success: function (res) {
+                    //console.log(res);
+                    $(".preloader").fadeOut();
+                    if (res.isValid) {
+                        $("#TotalSewa").val(res.totalSewa);
+                    }
+                    else {
+                        Swal.fire(
+                            'Upss, Sorry !',
+                            'Tidak dapat terhubung ke Web Services Silahkan check Internet Anda ',
+                            //+ res.message,
+                            'warning'
+                        )
+                        //$.notify('Sorry ' + res.message, { globalPosition: 'top center', className: 'warning' })
+                    }
+                    $(".preloader").fadeOut();
+                },
+                error: function (request, status, error) {
+                    console.log(error.responseText);
+                    $.notify('Sorry ' + error.responseText, { globalPosition: 'top center', className: 'warning' })
+                    $(".preloader").fadeOut();
+                }
+            });
+        }
+
+    </script>
+        }
+        catch (Exception ex)
+        {
+            var Error = new ErrorViewModel();
+            Error.MessageContent = ex.ToString();
+            Error.MessageTitle = "Error ";
+            Error.RequestId = Activity.Current?.Id ?? "0";
+            @await Html.PartialAsync("Error", Error)
+        }
+    }
+    else
+    {
+        @await Html.PartialAsync("Error", Model.Error)
+    }
+}
+

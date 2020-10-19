@@ -11,6 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModbusServerRTU", "ModbusSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyModbusServerSimulator", "EasyModbusServerSimulator\EasyModbusServerSimulator.csproj", "{871BD4C1-69F0-45B9-8807-1620E6A896A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish", "Publish", "{D3B04718-02E3-4E11-A254-56DFAE3EE967}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\site1.PublishSettings = ..\..\..\..\Downloads\site1.PublishSettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{0FC50B59-3037-489F-BB68-30DD7B163432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +52,12 @@ Global
 		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.DebugCommercial3|Any CPU.Build.0 = DebugCommercial3|Any CPU
 		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC50B59-3037-489F-BB68-30DD7B163432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

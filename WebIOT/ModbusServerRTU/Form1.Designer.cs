@@ -49,6 +49,8 @@
             this.Value_Coils = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dg_IR = new System.Windows.Forms.DataGridView();
+            this.Address_IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Value_IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dg_HoldReg = new System.Windows.Forms.DataGridView();
             this.Add_HR = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,15 +63,13 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address_IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Value_IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_DI)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Coils)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_IR)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_IR)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_HoldReg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -255,6 +255,15 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dg_IR);
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(852, 647);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Input Resgisters";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // dg_IR
             // 
@@ -268,15 +277,20 @@
             this.dg_IR.Size = new System.Drawing.Size(791, 612);
             this.dg_IR.TabIndex = 0;
             this.dg_IR.Text = "dataGridView2";
-            this.tabPage3.Controls.Add(this.dg_IR);
-            this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(852, 647);
-            this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "Input Resgisters";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // Address_IR
+            // 
+            this.Address_IR.HeaderText = "Address";
+            this.Address_IR.MinimumWidth = 9;
+            this.Address_IR.Name = "Address_IR";
+            this.Address_IR.Width = 175;
+            // 
+            // Value_IR
+            // 
+            this.Value_IR.HeaderText = "Value";
+            this.Value_IR.MinimumWidth = 9;
+            this.Value_IR.Name = "Value_IR";
+            this.Value_IR.Width = 175;
             // 
             // tabPage4
             // 
@@ -375,25 +389,11 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 175;
             // 
-            // Address_IR
-            // 
-            this.Address_IR.HeaderText = "Address";
-            this.Address_IR.MinimumWidth = 9;
-            this.Address_IR.Name = "Address_IR";
-            this.Address_IR.Width = 175;
-            // 
-            // Value_IR
-            // 
-            this.Value_IR.HeaderText = "Value";
-            this.Value_IR.MinimumWidth = 9;
-            this.Value_IR.Name = "Value_IR";
-            this.Value_IR.Width = 175;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 784);
+            this.ClientSize = new System.Drawing.Size(1432, 793);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.tabControl1);
@@ -415,8 +415,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_DI)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_Coils)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_IR)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dg_IR)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_HoldReg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
