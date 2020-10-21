@@ -417,3 +417,4 @@ C:\Users\richo\source\repos\IOTProject\WebIOT\WebIOT\obj\Release\netcoreapp3.1\W
 C:\Users\richo\source\repos\IOTProject\WebIOT\WebIOT\obj\Release\netcoreapp3.1\WebIOT.pdb
 C:\Users\richo\source\repos\IOTProject\WebIOT\WebIOT\obj\Release\netcoreapp3.1\WebIOT.genruntimeconfig.cache
 C:\Users\richo\source\repos\IOTProject\WebIOT\WebIOT\obj\Release\netcoreapp3.1\Razor\Views\Conveyor\Dashboard.cshtml.g.cs
+C:\Users\richo\source\repos\IOTProject\WebIOT\WebIOT\obj\Release\netcoreapp3.1\Razor\Views\Conveyor\_MqttPanel.cshtml.g.cs

@@ -27,13 +27,12 @@ namespace WebIOT.Controllers
             _env = env;
         }
 
-        public async Task<IActionResult> DashboardAsync()
+        public async Task<IActionResult> Dashboard()
         {
             Config.ConStr = _configuration.GetConnectionString("Db");
-            var model = new CariBukuModel();
+            var model = new DashboardModel();
             try
             {
-
                 if (string.IsNullOrEmpty(HttpContext.Session.GetString("_UserId")))
                 {
                     var model2 = new alertLogin();
@@ -42,9 +41,11 @@ namespace WebIOT.Controllers
                 else
                 {
                     ViewBag.UserId = HttpContext.Session.GetString("_UserId");
-
-                    var filter = new CariBuku();
-                    model.DataBuku = await f.CariBuku_GetSearch(filter);
+                    var ConfMqqt = new MqqtModel();
+                    ConfMqqt.Host = "mqtt.eclipse.org";
+                    ConfMqqt.Port = "80";
+                    ConfMqqt.Topic = "IOTAPP";
+                    model.MqqtPanel = ConfMqqt;
                     return await Task.Run(() => View(model));
                 }
             }

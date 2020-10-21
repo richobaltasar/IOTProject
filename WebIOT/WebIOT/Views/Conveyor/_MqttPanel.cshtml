@@ -1,0 +1,338 @@
+﻿@model MqqtModel
+<script src="~/assets/MqttWebSocket/mqttws31.js"></script>
+<div class="slides" style="align-content:center;">
+    <!--Monitoring-->
+    <div class="col-sm-3 text-center">
+        <div class="card shadow" style="height:270px;">
+            <div class="card-body">
+                <h4 class="card-title">Speed Monitoring</h4>
+                <hr />
+                <p>RPM</p>
+                <div class="js-gauge speed gauge" style="margin-top:-40px;padding-top:0px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-3 text-center">
+        <div class="card shadow" style="height:270px;">
+            <div class="card-body">
+                <h4 class="card-title">Control</h4>
+                <hr />
+                <p>Status</p>
+                <div class="led-red" id="LedStatus"></div>
+                <br />
+                <p>Start / Stop</p>
+                <input id="btnStart" type="checkbox"
+                       checked="checked" data-toggle="toggle"
+                       data-on="Start"
+                       data-off="Stop" data-style="ios"
+                       data-onstyle="success" data-offstyle="danger" style="text-align:center;">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 text-center">
+        <div class="card shadow" style="height:270px;">
+            <div class="card-body">
+                <h4 class="card-title">Temp. Monitoring</h4>
+                <div class="badge badge-info" style="border-radius:50% 10%;margin-top:-10px;" id="badgeSuhu">
+                    <strong style="font-size:medium;" id="txtSuhu">-5 *C</strong>
+                </div>
+                <div id="chart-container"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 text-center">
+        <div class="card shadow" style="height:270px;">
+            <div class="card-body">
+                <h4 class="card-title">Voltage Monitoring</h4>
+                <p style="margin-top:20px;">Volt</p>
+                <div class="js-gauge voltage gauge" style="margin-top:-40px;padding-top:0px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 text-center">
+        <div class="card shadow" style="height:270px;">
+            <div class="card-body">
+                <h4 class="card-title">Vibrate Monitoring</h4>
+                <p style="margin-top:20px;">Hertz</p>
+                <div class="js-gauge vibrates gauge" style="margin-top:-40px;padding-top:0px;"></div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button Event -->
+<script type="text/javascript">
+    var StateBtn = 2;
+    $(function () {
+        client.connect(options);
+        $('#btnStart').change(async function () {
+            //alert("Change:" + StateBtn);
+            if ($(this).prop('checked') == true) {
+                if (StateBtn != 0) {
+                    await publish('0', 'IOTAPP/POWER', 2);
+                    StateBtn = 0;
+                }
+                
+            }
+            else {
+                if (StateBtn != 1) {
+                    await publish('1', 'IOTAPP/POWER', 2);
+                    StateBtn = 1;
+                }
+            }
+        })
+    });
+</script>
+
+<!--Speed Gauge-->
+<script type="text/javascript">
+    $('.speed').kumaGauge({
+        value: Math.floor((0 * 99))
+    });
+
+    $('.speed').kumaGauge('update', {
+        value: Math.floor((0 * 99))
+    });
+
+    $('.speed').kumaGauge({
+        value: Math.floor((0 * 99)),
+        fill: '#F34A53',
+        gaugeBackground: '#1E4147',
+        gaugeWidth: 10,
+        showNeedle: false,
+        label: {
+            display: true,
+            left: 'Min',
+            right: 'Max',
+            fontFamily: 'Helvetica',
+            fontColor: '#1E4147',
+            fontSize: '11',
+            fontWeight: 'bold'
+        }
+    });
+</script>
+
+<!--Temp Gauge-->
+<script type="text/javascript">
+    FusionCharts.ready(function () {
+        var updateAnnotation,
+            chart = new FusionCharts({
+                type: 'thermometer',
+                renderAt: 'chart-container',
+                id: 'myThm',
+                width: '200',
+                height: '190',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "theme": "fusion",
+                        "lowerLimit": "-10",
+                        "upperLimit": "0",
+                        "decimals": "1",
+                        "numberSuffix": "°C",
+                        "showhovereffect": "1",
+                        "thmFillColor": "#008ee4",
+                        "showGaugeBorder": "1",
+                        "gaugeBorderColor": "#008ee4",
+                        "gaugeBorderThickness": "2",
+                        "gaugeBorderAlpha": "30",
+                        "thmOriginX": "100",
+                        "chartBottomMargin": "20",
+                        "valueFontColor": "#000000",
+                        "theme": "fusion"
+                    },
+                    "value": "-6",
+                },
+                "events": {
+                    "initialized": function (evt, arg) {
+                        var dataUpdate = setInterval(function () {
+                            var value,
+                                prevTemp = FusionCharts.items["myThm"].getData(),
+                                mainTemp = (Math.random() * 10) * (-1),
+                                diff = Math.abs(prevTemp - mainTemp);
+
+                            diff = diff > 1 ? (Math.random() * 1) : diff;
+                            if (mainTemp > prevTemp) {
+                                value = prevTemp + diff;
+                            } else {
+                                value = prevTemp - diff;
+                            }
+                            $("#txtSuhu").text(Number(value).toFixed(2) + " *C");
+                            FusionCharts.items["myThm"].feedData("&value=" + value);
+
+                        }, 3000);
+
+                        updateAnnotation = function (evtObj, argObj) {
+                            var code,
+                                chartObj = evtObj.sender,
+                                val = chartObj.getData(),
+                                annotations = chartObj.annotations;
+
+                            if (val >= -4.5) {
+                                code = "#00FF00";
+                                $("#badgeSuhu").removeClass("badge-info");
+                                $("#badgeSuhu").removeClass("badge-danger");
+                                $("#badgeSuhu").removeClass("badge-success");
+                                $("#badgeSuhu").addClass("badge-danger");
+                            }
+                            else if (val <= -4.5 && val >= -6) {
+                                code = "#ff9900";
+                                $("#badgeSuhu").removeClass("badge-info");
+                                $("#badgeSuhu").removeClass("badge-danger");
+                                $("#badgeSuhu").removeClass("badge-success");
+
+                                $("#badgeSuhu").addClass("badge-info");
+
+                            }
+                            else {
+                                code = "#ff0000";
+                                $("#badgeSuhu").removeClass("badge-info");
+                                $("#badgeSuhu").removeClass("badge-danger");
+                                $("#badgeSuhu").removeClass("badge-success");
+                                $("#badgeSuhu").addClass("badge-success");
+                            }
+                        };
+                    },
+                    "renderComplete": function (evt, arg) {
+                        updateAnnotation(evt, arg);
+                    },
+                    "realtimeUpdateComplete": function (evt, arg) {
+                        updateAnnotation(evt, arg);
+                    }
+                }
+            })
+                .render();
+    });
+</script>
+
+<!--Tegangan Gauge-->
+<script type="text/javascript">
+    $('.voltage').kumaGauge({
+        value: Math.floor((Math.random() * 99) / 10)
+    });
+
+    $('.voltage').kumaGauge('update', {
+        value: Math.floor((Math.random() * 99) / 10)
+    });
+    $('.voltage').kumaGauge({
+        value: Math.floor((Math.random() * 99) / 10),
+        fill: '#F34A53',
+        gaugeBackground: '#1E4147',
+        gaugeWidth: 10,
+        showNeedle: false,
+        label: {
+            display: true,
+            left: 'Min',
+            right: 'Max',
+            fontFamily: 'Helvetica',
+            fontColor: '#1E4147',
+            fontSize: '11',
+            fontWeight: 'bold'
+        }
+    });
+</script>
+
+<!--Getaran-->
+<script type="text/javascript">
+    $('.vibrates').kumaGauge({
+        value: Math.floor((0 * 99))
+    });
+
+    $('.vibrates').kumaGauge('update', {
+        value: Math.floor((0 * 99))
+    });
+    $('.vibrates').kumaGauge({
+        value: Math.floor((0 * 99)),
+        fill: '#F34A53',
+        gaugeBackground: '#1E4147',
+        gaugeWidth: 10,
+        showNeedle: false,
+        label: {
+            display: true,
+            left: 'Min',
+            right: 'Max',
+            fontFamily: 'Helvetica',
+            fontColor: '#1E4147',
+            fontSize: '11',
+            fontWeight: 'bold'
+        }
+    });
+</script>
+
+<!--MQTT Function-->
+<script type="text/javascript">
+
+    var client = new Messaging.Client("@Model.Host", @Model.Port, "myclientid_" + parseInt(Math.random() * 100, 10));
+
+    client.onConnectionLost = async function (responseObject) {
+        await client.connect(options);
+    };
+
+    client.onMessageArrived = async function (message) {
+        if (message.destinationName == "@Model.Topic/KONVEYOR") {
+            var newVal = await Math.floor((message.payloadString)) / 10;
+            $('.speed').kumaGauge('update', {
+                value: newVal
+            });
+        }
+        else if (message.destinationName == "@Model.Topic/LED") {
+            //alert(StateBtn);
+            if (message.payloadString == 1) {
+                $("#LedStatus").removeClass("led-red");
+                $("#LedStatus").addClass("led-green");
+                
+                if (StateBtn != 1) {
+                    StateBtn = 1;
+                    $('#btnStart').prop('checked', false).change();
+                    
+                }
+            }
+            else {
+                //alert(StateBtn);
+                $("#LedStatus").removeClass("led-green");
+                $("#LedStatus").addClass("led-red");
+                if (StateBtn != 0) {
+                    StateBtn = 0;
+                    $('#btnStart').prop('checked', true).change();
+                }
+                //$('#btnStart').prop('checked', true).change();
+                //StateBtn = true;
+            }
+        }
+        else if (message.destinationName == "@Model.Topic/TEGANGAN") {
+            var newVal = Math.floor((message.payloadString)) / 10;
+            $('.voltage').kumaGauge('update', {
+                value: newVal
+            });
+        }
+        else if (message.destinationName == "@Model.Topic/GETARAN") {
+            var newVal = Math.floor((message.payloadString));
+            $('.vibrates').kumaGauge('update', {
+                value: newVal
+            });
+        }
+    };
+
+    var options = {
+        timeout: 3,
+        onSuccess: async function () {
+            await client.subscribe('@Model.Topic/KONVEYOR', { qos: 2 });
+            await client.subscribe('@Model.Topic/LED', { qos: 2 });
+            await client.subscribe('@Model.Topic/TEGANGAN', { qos: 2 });
+            await client.subscribe('@Model.Topic/GETARAN', { qos: 2 });
+        },
+        onFailure: async function (message) {
+            await client.connect(options);
+        }
+    };
+    //Creates a new Messaging.Message Object and sends it to the HiveMQ MQTT Broker
+    var publish = async function (payload, topic, qos) {
+        //Send your message (also possible to serialize it as JSON or protobuf or just use a string, no limitations)
+        var message = new Messaging.Message(payload);
+        message.destinationName = topic;
+        message.qos = qos;
+        await client.send(message);
+    }
+</script>

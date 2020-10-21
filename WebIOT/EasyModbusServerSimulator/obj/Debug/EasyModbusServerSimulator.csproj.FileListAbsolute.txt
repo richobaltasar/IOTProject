@@ -22,5 +22,4 @@ C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debu
 C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe.config
 C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.exe
 C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbusServerSimulator.pdb
-C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\bin\Debug\EasyModbus.dll
 C:\Users\richo\source\repos\IOTProject\WebIOT\EasyModbusServerSimulator\obj\Debug\EasyModbusServerSimulator.csproj.CopyComplete
