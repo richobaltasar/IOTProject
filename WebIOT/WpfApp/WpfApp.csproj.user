@@ -7,12 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Mqtt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_Setting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Mqtt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_Setting.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window1.xaml">

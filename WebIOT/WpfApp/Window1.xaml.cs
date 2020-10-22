@@ -48,7 +48,7 @@ namespace WpfApp
         }
 
         #region Event Handler Mqtt
-        private async void OnTraceMessagePublished(object sender, MqttNetLogMessagePublishedEventArgs e)
+        private void OnTraceMessagePublished(object sender, MqttNetLogMessagePublishedEventArgs e)
         {
             if(e.LogMessage.Message.Contains("IOTAPP/") == true)
             {

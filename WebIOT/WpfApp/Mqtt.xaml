@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp.Mqtt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Mqtt" Height="550" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="711*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="203*"/>
+            <RowDefinition Height="237*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#2f5cb6"/>
+        <Border Background="#1f3d7a" Grid.Column="1"/>
+        <Border Grid.ColumnSpan="2" Background="White" Margin="0,4,0,0" Grid.Row="1"/>
+
+        <Image Margin="20" Source="/Assets/images/weather-191-461610.png" />
+        <StackPanel Grid.Column="1" 
+                    Margin="40,0,0,0" VerticalAlignment="Center" Height="33">
+            <TextBlock Foreground="White" FontSize="25" 
+                       Text="IOT Gateway"/>
+        </StackPanel>
+        <Frame x:Name="_MainFrame" />
+    </Grid>
+</Window>

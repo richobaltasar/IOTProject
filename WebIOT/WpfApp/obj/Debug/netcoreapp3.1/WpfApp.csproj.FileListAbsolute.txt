@@ -23,3 +23,8 @@ C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Win
 C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\bin\Debug\netcoreapp3.1\MQTTnet.dll
 C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Window1.baml
 C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\bin\Debug\netcoreapp3.1\MQTTnet.Extensions.ManagedClient.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Mqtt.g.cs
+C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Mqtt.baml
+C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Setting.g.cs
+C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Setting.baml
+C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\obj\Debug\netcoreapp3.1\Page_Setting.g.cs

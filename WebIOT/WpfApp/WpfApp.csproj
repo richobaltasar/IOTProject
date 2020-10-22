@@ -12,4 +12,8 @@
     <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Assets\images\" />
+  </ItemGroup>
+
 </Project>

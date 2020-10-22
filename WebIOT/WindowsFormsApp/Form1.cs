@@ -22,5 +22,15 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

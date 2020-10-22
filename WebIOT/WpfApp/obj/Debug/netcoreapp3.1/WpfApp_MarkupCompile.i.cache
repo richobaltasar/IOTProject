@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\richo\source\repos\IOTProject\WebIOT\WpfApp\App.xaml
-2462529049
+4743544447
 
-6-1676725347
+8-855160186
 1951561004723
-MainWindow.xaml;Window1.xaml;
+MainWindow.xaml;Mqtt.xaml;Page_Setting.xaml;Window1.xaml;
 
 True
 
