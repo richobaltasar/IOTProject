@@ -41,6 +41,10 @@
             "MQTTnet": {
               "target": "Package",
               "version": "[3.0.12, )"
+            },
+            "MQTTnet.Extensions.ManagedClient": {
+              "target": "Package",
+              "version": "[3.0.12, )"
             }
           },
           "imports": [

@@ -7,18 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebIOT", "WebIOT\WebIOT.csp
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{494F7D8B-CBEB-476E-852A-9644E02BE8DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyModbusServerSimulator", "EasyModbusServerSimulator\EasyModbusServerSimulator.csproj", "{871BD4C1-69F0-45B9-8807-1620E6A896A9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish", "Publish", "{D3B04718-02E3-4E11-A254-56DFAE3EE967}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\Downloads\site1.PublishSettings = ..\..\..\..\Downloads\site1.PublishSettings
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{0FC50B59-3037-489F-BB68-30DD7B163432}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{5C0B6569-9F8B-41AD-A1A4-B84F52853302}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOTGatewayApp", "IOTGatewayApp\IOTGatewayApp.csproj", "{868C1392-6B4D-4116-904D-D7620C912C7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,30 +36,12 @@ Global
 		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{494F7D8B-CBEB-476E-852A-9644E02BE8DE}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.DebugCommercial3|Any CPU.ActiveCfg = DebugCommercial3|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.DebugCommercial3|Any CPU.Build.0 = DebugCommercial3|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{871BD4C1-69F0-45B9-8807-1620E6A896A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FC50B59-3037-489F-BB68-30DD7B163432}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C0B6569-9F8B-41AD-A1A4-B84F52853302}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39D1A6EB-B8CF-49AC-819F-4E4E1FC4F795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.DebugCommercial3|Any CPU.ActiveCfg = Debug|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.DebugCommercial3|Any CPU.Build.0 = Debug|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868C1392-6B4D-4116-904D-D7620C912C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

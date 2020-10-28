@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FrqmIf6uaDaEncASBQww+fS/W5B7MgAdqEoBDLXk3HqYWMmrOUF6fbMWZGpWeeF2WR/wXuLcfcDYxjl2PU084g==",
+  "dgSpecHash": "jN9ILRmmLzUpmv2xdQQK/EQYOk/ajsbVa/hAB4Hi0NP+H6xdjFn+UUULmbLxNaAgmKiKblf2t2FPg7hD5xPAwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WindowsFormsApp\\WindowsFormsApp.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\richo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\mqttnet\\3.0.12\\mqttnet.3.0.12.nupkg.sha512",
+    "C:\\Users\\richo\\.nuget\\packages\\mqttnet.extensions.managedclient\\3.0.12\\mqttnet.extensions.managedclient.3.0.12.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\richo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

@@ -8,6 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="MQTTnet" Version="3.0.12" />
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EasyModbus">
+      <HintPath>G:\Tools War Project Pak wawan\EasyModbusTCP .NET Package V5.5\EasyModbusLibrary for .NET (DLL)\EasyModbus.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

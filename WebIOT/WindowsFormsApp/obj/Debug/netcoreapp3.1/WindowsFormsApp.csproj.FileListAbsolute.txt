@@ -13,5 +13,7 @@ C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcorea
 C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcoreapp3.1\WindowsFormsApp.pdb
 C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcoreapp3.1\WindowsFormsApp.genruntimeconfig.cache
 C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\bin\Debug\netcoreapp3.1\MQTTnet.dll
-C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcoreapp3.1\WindowsFormsApp.csproj.CoreCompileInputs.cache
 C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcoreapp3.1\WindowsFormsApp.csproj.CopyComplete
+C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\bin\Debug\netcoreapp3.1\MQTTnet.Extensions.ManagedClient.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\bin\Debug\netcoreapp3.1\EasyModbus.dll
+C:\Users\richo\source\repos\IOTProject\WebIOT\WindowsFormsApp\obj\Debug\netcoreapp3.1\WindowsFormsApp.csproj.CoreCompileInputs.cache
