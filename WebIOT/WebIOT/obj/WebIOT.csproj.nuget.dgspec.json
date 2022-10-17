@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {}
+    "D:\\Tentakel\\UII\\Project\\OEE Dashboard\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {
+    "D:\\Tentakel\\UII\\Project\\OEE Dashboard\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
+        "projectUniqueName": "D:\\Tentakel\\UII\\Project\\OEE Dashboard\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
         "projectName": "WebIOT",
-        "projectPath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
-        "packagesPath": "C:\\Users\\richo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\richo\\source\\repos\\IOTProject\\WebIOT\\WebIOT\\obj\\",
+        "projectPath": "D:\\Tentakel\\UII\\Project\\OEE Dashboard\\IOTProject\\WebIOT\\WebIOT\\WebIOT.csproj",
+        "packagesPath": "C:\\Users\\Dell3420\\.nuget\\packages\\",
+        "outputPath": "D:\\Tentakel\\UII\\Project\\OEE Dashboard\\IOTProject\\WebIOT\\WebIOT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\richo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell3420\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

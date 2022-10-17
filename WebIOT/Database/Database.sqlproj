@@ -285,4 +285,7 @@
     <Build Include="dbo\Stored Procedures\GroupData\SP_GroupData_Get.sql" />
     <Build Include="dbo\Stored Procedures\SP_MenuData_Save.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Database.publish.xml" />
+  </ItemGroup>
 </Project>

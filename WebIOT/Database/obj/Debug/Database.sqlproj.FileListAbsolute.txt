@@ -1,0 +1,10 @@
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\bin\Debug\Database.dacpac
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\bin\Debug\Database.dll
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\bin\Debug\Database.pdb
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\Model.xml
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\refactor.xml
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\postdeploy.sql
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\predeploy.sql
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\Database.dll
+D:\Tentakel\UII\Project\OEE Dashboard\IOTProject\WebIOT\Database\obj\Debug\Database.pdb
